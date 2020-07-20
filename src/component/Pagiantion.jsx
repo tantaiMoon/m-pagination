@@ -15,9 +15,6 @@ export default class Pagination extends React.Component {
   }
 
   componentDidMount() {
-    if (!this.props.total) {
-      throw new Error('total is required')
-    }
     if (this.props.showTotal && typeof this.props.showTotal !== 'function' && typeof this.props.showTotal !== 'boolean') {
       throw new Error('The showTotal type must be a function or boolean')
     }
