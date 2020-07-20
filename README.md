@@ -35,5 +35,5 @@ ReactDOM.render(<Pagination />, container);
 | onChange  | page change callback                | Function(current, pageSize)                     | -       |
 | showTotal | show total records and range        | Function(total, [from, to])                     | -       |
 | style     | the style of pagination             | Object                                          | {}      |
-| prevIcon  | specifict the default previous icon | ReactNode \|\r(props: PaginationProps) => ReactNode |         |
-| nextIcon  | specifict the default next icon     | ReactNode \|\r(props: PaginationProps) => ReactNode |         |
+| prevIcon  | specifict the default previous icon | ReactNode \|(props: PaginationProps) => ReactNode |         |
+| nextIcon  | specifict the default next icon     | ReactNode \|(props: PaginationProps) => ReactNode |         |
