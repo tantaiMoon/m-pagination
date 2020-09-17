@@ -1,5 +1,5 @@
 {
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -28,6 +28,12 @@
       "pre-commit": "tsdx lint"
     }
   },
+  "keywords": [
+    "react",
+    "pagination",
+    "react component",
+    "ts-react"
+  ],
   "prettier": {
     "printWidth": 80,
     "semi": true,
