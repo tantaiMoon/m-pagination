@@ -34,5 +34,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "基于 react 的分页器组件",
+  "main": "craco.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tantaiMoon/m-pagination.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tantaiMoon/m-pagination/issues"
+  },
+  "homepage": "https://github.com/tantaiMoon/m-pagination#readme"
 }
