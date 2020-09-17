@@ -1,4 +1,4 @@
-# m-pagination
+# moyi-pagination
 
 基于 react 的分页器组件
 
@@ -21,7 +21,7 @@ npm start
 # Usage
 
 ```js
-import Pagination from 'm-pagination';
+import Pagination from 'moyi-pagination';
 ReactDOM.render(<Pagination />, container);
 ```
 
