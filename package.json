@@ -1,5 +1,5 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -34,9 +34,9 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "moyi-pagination",
+  "name": "moyi-components",
   "author": "moyiwpb",
-  "module": "dist/moyi-pagination.esm.js",
+  "module": "dist/moyi-components.esm.js",
   "devDependencies": {
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.49",

@@ -13,7 +13,7 @@ module.exports = {
           }),
         ],
         inject: false,
-        extract: 'moyi-pagination.min.css',
+        extract: 'moyi-components.min.css',
         extensions: ['.less'],
       })
     );
