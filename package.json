@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -60,7 +60,6 @@
   ],
   "dependencies": {
     "classnames": "^2.2.6",
-    "global": "^4.4.0",
     "np": "^6.5.0"
   },
   "repository": {

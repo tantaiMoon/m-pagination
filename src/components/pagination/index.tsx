@@ -51,11 +51,14 @@ class Pagination extends React.Component<IProps, IState> {
     ) {
       throw new Error('The showTotal type must be a function or boolean');
     }
+    const total: number = this.props.total || 0;
+    const current: number = this.props.current || 1;
+    const pageSize: number = this.props.pageSize || 10;
     this.setState({
-      total: this.props.total || 0,
-      current: this.props.current || 1,
-      pageSize: this.props.pageSize || 10,
-      totalPage: Math.ceil(this.props.total / this.props.pageSize) || 1,
+      total,
+      current,
+      pageSize,
+      totalPage: Math.ceil(total / pageSize) || 1,
     });
   }
 
@@ -261,6 +264,7 @@ class Pagination extends React.Component<IProps, IState> {
   render() {
     const { style, showTotal = true, total } = this.props;
     const { totalPage, pageSize, current } = this.state;
+    // console.log(total, totalPage, pageSize);
     const pageList = this.renderPage(totalPage);
     return (
       <div className="pagination-wrapper" style={style}>

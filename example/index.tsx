@@ -7,7 +7,7 @@ import '../dist/moyi-pagination.min.css';
 const App = () => {
   return (
     <div>
-      <MyPagination total={10} current={1} />
+      <MyPagination total={100} current={1} />
     </div>
   );
 };
