@@ -1,39 +1,44 @@
-# moyi-pagination
+<h1 align="center">Welcome to moyi-pagination 👋</h1>
+<p>
+  <a href="https://www.npmjs.com/package/moyi-pagination" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/moyi-pagination.svg">
+  </a>
+  <img src="https://img.shields.io/badge/node-%3E%3D10-blue.svg" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-基于 react 的分页器组件
+## Prerequisites
 
-React Pagination Component
+- node >=10
 
-# Development
+## Install
 
-```shell
-git pull https://github.com/tantaiMoon/m-pagination.git
-
-npm install
-# OR
+```sh
 yarn install
-
-npm start
 ```
 
-# Example
+## Usage
 
-# Usage
-
-```js
-import Pagination from 'moyi-pagination';
-ReactDOM.render(<Pagination />, container);
+```sh
+yarn run start
 ```
 
-# API
+## Run tests
 
-| Parameter | Description                         | Type                                              | Default |
-| --------- | ----------------------------------- | ------------------------------------------------- | ------- |
-| current   | current page                        | Number                                            | 1       |
-| pageSize  | items per page                      | Number                                            | 10      |
-| total     | items total count                   | Number                                            | 0       |
-| onChange  | page change callback                | Function(current, pageSize)                       | -       |
-| showTotal | show total records and range        | Function(total, [from, to])                       | -       |
-| style     | the style of pagination             | Object                                            | {}      |
-| prevIcon  | specifict the default previous icon | ReactNode \|(props: PaginationProps) => ReactNode |         |
-| nextIcon  | specifict the default next icon     | ReactNode \|(props: PaginationProps) => ReactNode |         |
+```sh
+yarn run test
+```
+
+## Author
+
+👤 **moyiwpb**
+
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

@@ -1,51 +1,71 @@
 {
-  "name": "moyi-pagination",
-  "version": "0.1.0",
-  "private": false,
-  "dependencies": {
-    "@craco/craco": "^5.6.4",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "cra-template": "1.0.3",
-    "craco": "0.0.3",
-    "craco-less": "^1.17.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+  "version": "0.3.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "predeploy": "npm run build && cd example && npm run build",
+    "deploy": "gh-pages -d ./example/dist",
+    "release": "np --no-yarn --no-tests"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "peerDependencies": {
+    "react": ">=16"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
   },
-  "description": "基于 react 的分页器组件",
-  "main": "craco.config.js",
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "moyi-pagination",
+  "author": "moyiwpb",
+  "module": "dist/moyi-pagination.esm.js",
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "autoprefixer": "9.8.0",
+    "cssnano": "^4.1.10",
+    "gh-pages": "^3.1.0",
+    "husky": "^4.3.0",
+    "less": "^3.12.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rollup-plugin-postcss": "^3.1.8",
+    "tsdx": "^0.13.3",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Android >= 4.4",
+    "iOS >= 9"
+  ],
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "global": "^4.4.0",
+    "np": "^6.5.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tantaiMoon/m-pagination.git"
+    "url": "git+https://github.com/tantaimoon/m-pagination.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tantaiMoon/m-pagination/issues"
-  },
-  "homepage": "https://github.com/tantaiMoon/m-pagination#readme"
+  "homepage": "https://tantaiMoon.github.io/m-pagination"
 }
